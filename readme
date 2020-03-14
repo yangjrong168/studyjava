@@ -1,3 +1,32 @@
 this is a study java project 
 
 docker container run -p 8000:3333 -v /D/docker/log:/d/logs/springBoot springio/gs-spring-boot-docker
+
+
+docker container run -p 8000:3333 -v springboot-log:/logs/springBoot springio/gs-spring-boot-docker
+
+
+docker container run -p 8000:3333 -v //d/docker/log:/logs/springBoot springio/gs-spring-boot-docker
+
+
+docker container run -p 8000:3333 -v /tmp/docker/log:/logs/springBoot springio/gs-spring-boot-docker
+
+docker run -d -p 3306:3306 --privileged=true --restart always -v /docker/mysql/conf/my.cnf:/etc/mysql/my.cnf -v /docker/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root --name mysql57 mysql:5.7
+
+docker run --name=mysql80 -d \
+-p 3306:3306 --character-set-server=utf8mb4 --collation-server=utf8mb4_col --restart always -e MYSQL_ROOT_PASSWORD=root \
+--mount type=bind,src=/docker/mysql/conf/my.cnf,dst=/etc/my.cnf \
+--mount type=bind,src=/docker/mysql/data,dst=/var/lib/mysql \
+-d mysql/mysql-server:8.0
+
+docker run --name=mysql1  \
+-p 3306:3306  --restart always -e MYSQL_ROOT_PASSWORD=root \
+--mount type=bind,src=/docker/mysql/conf/my.cnf,dst=/etc/my.cnf \
+--mount type=bind,src=/docker/mysql/data,dst=/var/lib/mysql \
+-d mysql/mysql-server
+
+
+docker run --name mysql1 -d mysql/mysql-server MYSQL_ROOT_PASSWORD=root --character-set-server=utf8mb4 --collation-server=utf8mb4_col
+
+
+docker run -p 8000:3333 -d springio/gs-spring-boot-docker
