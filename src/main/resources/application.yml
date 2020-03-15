@@ -1,0 +1,48 @@
+
+server:
+      port: 3333
+#logging.level.ROOT=INFO
+logging:
+       path: /logs/springBoot
+       config: classpath:logback-spring.xml
+       pattern:
+              console: '[%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n'
+              file: '[%d{yyyy-MM-dd HH:mm:ss}] -- [%-5p]: [%c] -- %m%n'
+
+#@spring.active@
+spring:
+  mvc:
+    view:
+      prefix: /pages
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: assets/**,pages/**
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+
+# 公众号配置(必填)
+wx:
+  redirectUrl: http://yjr2.natapp1.cc/wechat/getUser
+  mp:
+    configs:
+      - appId: wx82184b127eb9b148
+        secret: 07ee6f2ed4af412431e4bfa300bb7fd4
+        token: yjrcar
+        aesKey: aesKey
+    #appId: wxc5882d765fe6d73f
+    #appId: wx3a812d61048f12ba
+    #secret: 4738e61667c1fdaaa8435c97c46d72f7
+    #secret: 06895fc9eb68d980bc6fd70fd97d1501
+    #token: yjrcar
+    #aesKey: aesKey
+  pay:
+    appId: wx3a812d61048f12ba
+    mchId: 1553237271
+    mchKey: #微信支付商户密钥
+    subAppId: #服务商模式下的子商户公众账号ID
+    subMchId: #服务商模式下的子商户号
+    keyPath: # p12证书的位置，可以指定绝对路径，也可以指定类路径（以classpath:开头）

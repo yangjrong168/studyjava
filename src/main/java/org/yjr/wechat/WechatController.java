@@ -1,94 +1,82 @@
 package org.yjr.wechat;
 
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.IOException;
-import java.security.KeyFactory;
-import java.security.PrivateKey;
-import java.security.cert.X509Certificate;
-import java.security.spec.PKCS8EncodedKeySpec;
-import java.util.List;
-
-import org.apache.commons.codec.binary.Base64;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.springframework.web.bind.annotation.GetMapping;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.yjr.spring.controller.TestController;
-
-import com.wechat.pay.contrib.apache.httpclient.WechatPayHttpClientBuilder;
-
 import lombok.extern.slf4j.Slf4j;
-
+import me.chanjar.weixin.common.api.WxConsts;
+import me.chanjar.weixin.common.error.WxErrorException;
+import me.chanjar.weixin.mp.api.WxMpService;
+import me.chanjar.weixin.mp.bean.result.WxMpOAuth2AccessToken;
+import me.chanjar.weixin.mp.bean.result.WxMpUser;
 @RestController
 @RequestMapping("wechat")
 @Slf4j
 public class WechatController {
-	@GetMapping("userServiceState")
-    public String userServiceState() {
-  	  log.info("wwww...............");
-  	  System.out.println("nihao");
-  	  return "hello";
-    }
-	  public  PrivateKey getPemPrivateKey(String filename, String algorithm) throws Exception {
-	      File f = new File(filename);
-	      FileInputStream fis = new FileInputStream(f);
-	      DataInputStream dis = new DataInputStream(fis);
-	      byte[] keyBytes = new byte[(int) f.length()];
-	      dis.readFully(keyBytes);
-	      dis.close();
-
-	      String temp = new String(keyBytes);
-	      String privKeyPEM = temp.replace("-----BEGIN PRIVATE KEY-----\n", "");
-	      privKeyPEM = privKeyPEM.replace("-----END PRIVATE KEY-----", "");
-	      //System.out.println("Private key\n"+privKeyPEM);
-
-	      Base64 b64 = new Base64();
-	      byte [] decoded = b64.decode(privKeyPEM);
-
-	      PKCS8EncodedKeySpec spec = new PKCS8EncodedKeySpec(decoded);
-	      KeyFactory kf = KeyFactory.getInstance(algorithm);
-	      return kf.generatePrivate(spec);
-	      }
-	public static void main(String[] args) {
-		String algorithm = "AES-256-GCM";
-		WechatController wechat = new WechatController();
-		String appId ="wx82184b127eb9b14";
-		String reqURL = "https://api.mch.weixin.qq.com/v3/payscore/user-service-state?service_id=service_id&appid="+appId+"&openid=openid";
-		//HttpRequest.sendGetRequest(reqURL);
-		String merchantId="1579088781";
-		String merchantSerialNumber = "00004000000000158372858330471545";
-		PrivateKey merchantPrivateKey = null;
-		try {
-			merchantPrivateKey = wechat.getPemPrivateKey("D:\\java\\study\\studyjava\\src\\main\\resources\\apiclient_key.pem", algorithm);
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		List<X509Certificate>  wechatpayCertificates = null;
-		//...
-		WechatPayHttpClientBuilder builder = WechatPayHttpClientBuilder.create()
-		        .withMerchant(merchantId, merchantSerialNumber, merchantPrivateKey)
-		        .withWechatpay(wechatpayCertificates);
-		// ... 接下来，你仍然可以通过builder设置各种参数，来配置你的HttpClient
-
-		// 通过WechatPayHttpClientBuilder构造的HttpClient，会自动的处理签名和验签
-		HttpClient httpClient = builder.build();
-
-		// 后面跟使用Apache HttpClient一样
-		HttpUriRequest request = HttpRequest.getHttpGet(reqURL);
-		try {
-			HttpResponse response = httpClient.execute(request);
-		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	  
+	    @Autowired
+	    private WxMpService wxMpService;
+	    
+	   // @Autowired
+	   // private WxConfig wxConfig;
+	    @RequestMapping(value = "/getUrl")
+	    @ResponseBody
+	    public Object getUrl(){
+	    	//wxMpService = 
+	        String url = "";
+	        url = "http://yjr2.natapp1.cc/wechat/getUser";
+	        //url = wxConfig.getRedirectUrl();
+	        String str=wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, null);
+	        return str;
+	    }
+	    //@ApiOperation(value="获取用户openId", notes="获取openId 然后重定向到客户端，地址为 redirect",httpMethod = "GET")
+	    @RequestMapping(value = "/getUser")
+	    public void getUser(String code,String state,HttpServletRequest request, HttpServletResponse response){
+	        try {
+	            WxMpOAuth2AccessToken wxMpOAuth2AccessToken = wxMpService.oauth2getAccessToken(code);
+	            WxMpUser wxMpUser = wxMpService.oauth2getUserInfo(wxMpOAuth2AccessToken, null);
+	            System.out.println(wxMpUser);
+	            System.out.println(wxMpUser.getOpenId());
+	            try {
+	             
+	                if(StringUtils.isEmpty(state)){
+	                    
+	                    System.out.println("state==="+state);
+	                    response.sendRedirect(state+"?openId="+wxMpUser.getOpenId());
+	                }else{
+	                    response.sendRedirect(state+"?openId="+wxMpUser.getOpenId());
+	                }
+	            } catch (IOException e) {
+	                e.printStackTrace();
+	            }
+	        } catch (WxErrorException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	    //@ApiIgnore
+	    @RequestMapping(value = "/config")
+	    public void config(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	        response.setContentType("text/html;charset=utf-8");
+	        response.setStatus(HttpServletResponse.SC_OK);
+	        String signature = request.getParameter("signature");
+	        String nonce = request.getParameter("nonce");
+	        String timestamp = request.getParameter("timestamp");
+	        if (!wxMpService.checkSignature(timestamp, nonce, signature)) {
+	            // 消息签名不正确，说明不是公众平台发过来的消息
+	            response.getWriter().println("非法请求");
+	            return;
+	        }
+	        String echostr = request.getParameter("echostr");
+	        if (StringUtils.isNotBlank(echostr)) {
+	            response.getWriter().println(echostr);
+	            return;
+	        }
+	    }
 }
