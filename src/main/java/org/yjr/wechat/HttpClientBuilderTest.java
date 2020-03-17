@@ -1,15 +1,31 @@
 package org.yjr.wechat;
 import com.wechat.pay.contrib.apache.httpclient.WechatPayHttpClientBuilder;
 import com.wechat.pay.contrib.apache.httpclient.util.PemUtil;
+
+import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.security.KeyFactory;
+import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateExpiredException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.CertificateNotYetValidException;
 import java.security.cert.X509Certificate;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Base64;
 
-import org.apache.http.Header;
+import org.apache.http.HeaderIterator;
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -26,21 +42,10 @@ import static org.junit.Assert.*;
 
 public class HttpClientBuilderTest {
 
- // private static String mchId = "1900009191"; // 商户号
-  //private static String mchSerialNo = "1DDE55AD98ED71D6EDD4A4A16996DE7B47773A8C"; // 商户证书序列号
   
   private static String mchId = "1579088781"; // 商户号
   private static String mchSerialNo = "754A7808528619074D854F58F9D4BBC242C99D2E"; // 商户证书序列号
-  
-  private CloseableHttpClient httpClient;
-
-  private static String reqdata = "{\n"
-      + "    \"stock_id\": \"9433645\",\n"
-      + "    \"stock_creator_mchid\": \"1900006511\",\n"
-      + "    \"out_request_no\": \"20190522_001中文11\",\n"
-      + "    \"appid\": \"wxab8acb865bb1637e\"\n"
-      + "}";
-
+  //wechatpay_1C12553F72E2B121FD6DEBF22DD60B99FB096FED.pem
   // 你的商户私钥
   private static String privateKey = "-----BEGIN PRIVATE KEY-----\n"+"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpS7MYhKoExHOA\r\n" + 
   		"HNNielCxRLWBCQS0bMvQrLUOeNWlc7OgvXUY0THdnhL7ThU1yKKJbuBQPcln1vHQ\r\n" + 
@@ -67,40 +72,28 @@ public class HttpClientBuilderTest {
   		"/ttiW/tB6NCwNKjgy8v+50bhTMuAI9DIUQAEqGECgYEA2hhKgqm74qABo2yt2YKE\r\n" + 
   		"hkAkxZ3AH8hL3Cn5sIV3BDYqpYiWvwm0zVJJTpWPejo4Br3g1nWXOvWmmn8zvmA3\r\n" + 
   		"3U4eyet/QEdT7jzR9/FsoVAHItBEl8jY2S6XwTsuC8oZ2eYaayNSp88gAdqaw3G/\r\n" + 
-  		"P7a/QQIpiYbIqpDSR44FvzI="
+  		"P7a/QQIpiYbIqpDSR44FvzI=1"
       + "-----END PRIVATE KEY-----";
+  private CloseableHttpClient httpClient;
+//1C12553F72E2B121FD6DEBF22DD60B99FB096FED
+  private static String reqdata = "{\n"
+      + "    \"stock_id\": \"9433645\",\n"
+      + "    \"stock_creator_mchid\": \"1900006511\",\n"
+      + "    \"out_request_no\": \"20190522_001中文11\",\n"
+      + "    \"appid\": \"wxab8acb865bb1637e\"\n"
+      + "}";
 
-  // 你的微信支付平台证书
-  private static String certificate =  "-----BEGIN CERTIFICATE-----\n"+"MIID7DCCAtSgAwIBAgIUdUp4CFKGGQdNhU9Y+dS7wkLJnS4wDQYJKoZIhvcNAQEL\r\n" + 
-  		"BQAwXjELMAkGA1UEBhMCQ04xEzARBgNVBAoTClRlbnBheS5jb20xHTAbBgNVBAsT\r\n" + 
-  		"FFRlbnBheS5jb20gQ0EgQ2VudGVyMRswGQYDVQQDExJUZW5wYXkuY29tIFJvb3Qg\r\n" + 
-  		"Q0EwHhcNMjAwMzA5MDMxNzExWhcNMjUwMzA4MDMxNzExWjB+MRMwEQYDVQQDDAox\r\n" + 
-  		"NTc5MDg4NzgxMRswGQYDVQQKDBLlvq7kv6HllYbmiLfns7vnu58xKjAoBgNVBAsM\r\n" + 
-  		"Iea3seWcs+W4guWGsOm4n+enkeaKgOaciemZkOWFrOWPuDELMAkGA1UEBgwCQ04x\r\n" + 
-  		"ETAPBgNVBAcMCFNoZW5aaGVuMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\r\n" + 
-  		"AQEAqUuzGISqBMRzgBzTYnpQsUS1gQkEtGzL0Ky1DnjVpXOzoL11GNEx3Z4S+04V\r\n" + 
-  		"NciiiW7gUD3JZ9bx0GXGnhxz1+ILgFXg2jYLmf8oJEH1uPPRmlZ7joAKK7leB9bs\r\n" + 
-  		"sPi70ffq/iiP9IGEbPmpUfFVHqorDDMbWQZWlMGzF58Vr3X2b3Aw3Z7s3ZObWrw1\r\n" + 
-  		"bSH+ICz/I1z97cxCA/CBsdliowWGb8ZdWhTtdj+pJBInogkhaoQjpjFqg4lqQvaR\r\n" + 
-  		"qICK0eSLnFWllGtaljrd9LDKFqZ4iR+dVk3ut0V/wJfTaoe7z/tDaM+ne3ek2n6H\r\n" + 
-  		"k9d4JHFHc+noz6Qzu03Rx1qI4wIDAQABo4GBMH8wCQYDVR0TBAIwADALBgNVHQ8E\r\n" + 
-  		"BAMCBPAwZQYDVR0fBF4wXDBaoFigVoZUaHR0cDovL2V2Y2EuaXRydXMuY29tLmNu\r\n" + 
-  		"L3B1YmxpYy9pdHJ1c2NybD9DQT0xQkQ0MjIwRTUwREJDMDRCMDZBRDM5NzU0OTg0\r\n" + 
-  		"NkMwMUMzRThFQkQyMA0GCSqGSIb3DQEBCwUAA4IBAQCLex4PWSzYGFHVskrMcJO8\r\n" + 
-  		"k9BTr1DRD0VdCAnlVCFXybvboB/M04MWC1nD8ywdZb0BxDolXHRyxbmEvRd7aIrU\r\n" + 
-  		"SzANOcHsMgLVQpd9cnvgYjzGu9Xlle22vz3Cj09u/sAHRhR1XvT1gzFaKn3tphS6\r\n" + 
-  		"d5rZezVD9oFcpQIRCwOfT4isFVyXZ8PmZ4Nm3HtAcU+a7WUKKcZos+TqIT4tPHxX\r\n" + 
-  		"LgAwsfo4RBnhNDQqxfY9n2k9hxsU25a2BDXl6k8GdA8HgIs+dl1p+/KiaAldzHnP\r\n" + 
-  		"dTrtWx2Ft4NRVpqFRgRiAqhCyetjZ45ETEjn/2N3YnrQkNWUyo9AaWxeR5CNv0wR"
-      + "-----END CERTIFICATE-----";
+  
+
 
   @Before
   public void setup() throws IOException  {
-    PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(
-        new ByteArrayInputStream(privateKey.getBytes("utf-8")));
-    X509Certificate wechatpayCertificate = PemUtil.loadCertificate(
-        new ByteArrayInputStream(certificate.getBytes("utf-8")));
-
+   // PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(
+    //    new ByteArrayInputStream(privateKey.getBytes("utf-8")));
+    PrivateKey merchantPrivateKey =  this.getPrivateKey("D:\\java\\study\\studyjava\\src\\main\\resources\\apiclient_key.pem");
+   // X509Certificate wechatpayCertificate = PemUtil.loadCertificate(
+      //  new ByteArrayInputStream(certificate.getBytes("utf-8")));
+    X509Certificate wechatpayCertificate = this.getCertificate("D:\\java\\study\\studyjava\\src\\main\\resources\\wechatpay_1C12553F72E2B121FD6DEBF22DD60B99FB096FED.pem");
     ArrayList<X509Certificate> listCertificates = new ArrayList<>();
     listCertificates.add(wechatpayCertificate);
 
@@ -115,17 +108,18 @@ public class HttpClientBuilderTest {
     httpClient.close();
   }
 
-  @Test
+  //@Test
   public void getCertificateTest() throws Exception {
     URIBuilder uriBuilder = new URIBuilder("https://api.mch.weixin.qq.com/v3/certificates");
-    uriBuilder.setParameter("p", "1&2");
-    uriBuilder.setParameter("q", "你好");
+   // uriBuilder.setParameter("p", "1&2");
+   // uriBuilder.setParameter("q", "你好");
 
     HttpGet httpGet = new HttpGet(uriBuilder.build());
     httpGet.addHeader("Accept", "application/json");
 
     CloseableHttpResponse response1 = httpClient.execute(httpGet);
-
+    printResponse(response1);
+    System.out.println("statusCode==="+response1.getStatusLine().getStatusCode());
     assertEquals(200, response1.getStatusLine().getStatusCode());
 
     try {
@@ -138,7 +132,7 @@ public class HttpClientBuilderTest {
     }
   }
 
-  @Test
+ // @Test
   public void getCertificatesWithoutCertTest() throws Exception {
     PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(
         new ByteArrayInputStream(privateKey.getBytes("utf-8")));
@@ -151,10 +145,10 @@ public class HttpClientBuilderTest {
     getCertificateTest();
   }
 
-  @Test
+  //@Test
   public void postNonRepeatableEntityTest() throws IOException {
     HttpPost httpPost = new HttpPost(
-        "https://api.mch.weixin.qq.com/v3/marketing/favor/users/oHkLxt_htg84TUEbzvlMwQzVDBqo/coupons");
+        "https://api.mch.weixin.qq.com/v3/marketing/favor/users/oG_yQv71Cdjd2E1n4JpQ7pJKQ9qA/coupons");
 
 
     InputStream stream = new ByteArrayInputStream(reqdata.getBytes("utf-8"));
@@ -175,7 +169,7 @@ public class HttpClientBuilderTest {
     }
   }
 
-  @Test
+ // @Test
   public void postRepeatableEntityTest() throws IOException {
     HttpPost httpPost = new HttpPost(
         "https://api.mch.weixin.qq.com/v3/marketing/favor/users/oHkLxt_htg84TUEbzvlMwQzVDBqo/coupons");
@@ -197,46 +191,28 @@ public class HttpClientBuilderTest {
       response.close();
     }
   }
+ // @Test
+  public void getCertificatesWithoutCertTestgetXXTest() throws Exception {
+    PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(
+        new ByteArrayInputStream(privateKey.getBytes("utf-8")));
+
+    httpClient = WechatPayHttpClientBuilder.create()
+        .withMerchant(mchId, mchSerialNo, merchantPrivateKey)
+        .withValidator(response -> true)
+        .build();
+
+    getXXTest();
+  }
   @Test
   public void getXXTest() throws Exception {
 	  String appId ="wx82184b127eb9b148";
-		String reqURL = "https://api.mch.weixin.qq.com/v3/payscore/user-service-state?service_id=00004000000000158372858330471545&appid="+appId+"&openid=oG_yQv71Cdjd2E1n4JpQ7pJKQ9qA";
-		//HttpRequest.sendGetRequest(reqURL);
-		String merchantId="1579088781";
-		String merchantSerialNumber = "00004000000000158372858330471545";
-	    URIBuilder uriBuilder = new URIBuilder(reqURL);
-
-   // uriBuilder.setParameter("p", "1&2");
-    ///uriBuilder.setParameter("q", "你好");
-
+	String reqURL = "https://api.mch.weixin.qq.com/v3/payscore/user-service-state?service_id=00004000000000158372858330471545&appid="+appId+"&openid=oG_yQv71Cdjd2E1n4JpQ7pJKQ9qA";
+    URIBuilder uriBuilder = new URIBuilder(reqURL);
     HttpGet httpGet = new HttpGet(uriBuilder.build());
     httpGet.addHeader("Accept", "application/json");
-
     CloseableHttpResponse response = httpClient.execute(httpGet);
-    System.out.println("----------------------------------------------------------------");
-    HttpEntity entity = response.getEntity();
-    System.out.println("-------------------------");
-    //打印响应状态
-    System.out.println("Status: " + response.getStatusLine());
-    //打印Server
-    Header[] headers = response.getHeaders("Server");
-    if(headers != null && headers.length > 0){
-        System.out.println("Server: " + response.getHeaders("Server")[0].getValue());
-    }
-    
-    if(entity != null){
-        //打印响应内容长度
-        System.out.println("Response content length: " + entity.getContentLength());
-        
-        //打印响应内容
-        System.out.println("Response content: " + EntityUtils.toString(entity));
-    }
-    System.out.println(response.toString());
-    System.out.println(response.getEntity());
-
-
     assertEquals(200, response.getStatusLine().getStatusCode());
-
+    printResponse(response);
     try {
       HttpEntity entity1 = response.getEntity();
       // do something useful with the response body
@@ -246,4 +222,73 @@ public class HttpClientBuilderTest {
       response.close();
     }
   }
+  public static void printResponse(HttpResponse httpResponse)
+          throws ParseException, IOException {
+      // 获取响应消息实体
+      HttpEntity entity = httpResponse.getEntity();
+      // 响应状态
+      System.out.println("status:" + httpResponse.getStatusLine());
+      System.out.println("headers:");
+      HeaderIterator iterator = httpResponse.headerIterator();
+      while (iterator.hasNext()) {
+          System.out.println("\t" + iterator.next());
+      }
+      // 判断响应实体是否为空
+      if (entity != null) {
+          String responseString = EntityUtils.toString(entity);
+          System.out.println("response length:" + responseString.length());
+          System.out.println("response content:"
+                  + responseString.replace("\r\n", ""));
+      }
+  }
+  
+  /**
+   * 获取证书。
+   *
+   * @param filename 证书文件路径  (required)
+   * @return X509证书
+   */
+  public static X509Certificate getCertificate(String filename) throws IOException {
+    InputStream fis = new FileInputStream(filename);
+    BufferedInputStream bis = new BufferedInputStream(fis);
+
+    try {
+      CertificateFactory cf = CertificateFactory.getInstance("X509");
+      X509Certificate cert = (X509Certificate) cf.generateCertificate(bis);
+      cert.checkValidity();
+      return cert;
+    } catch (CertificateExpiredException e) {
+      throw new RuntimeException("证书已过期", e);
+    } catch (CertificateNotYetValidException e) {
+      throw new RuntimeException("证书尚未生效", e);
+    } catch (CertificateException e) {
+      throw new RuntimeException("无效的证书文件", e);
+    } finally {
+      bis.close();
+    }
+  }
+  
+  /**
+   * 获取私钥。
+   *
+   * @param filename 私钥文件路径  (required)
+   * @return 私钥对象
+   */
+public static PrivateKey getPrivateKey(String filename) throws IOException {
+
+  String content = new String(Files.readAllBytes(Paths.get(filename)), "utf-8");
+  try {
+    String privateKey = content.replace("-----BEGIN PRIVATE KEY-----", "")
+        .replace("-----END PRIVATE KEY-----", "")
+        .replaceAll("\\s+", "");
+
+    KeyFactory kf = KeyFactory.getInstance("RSA");
+    return kf.generatePrivate(
+        new PKCS8EncodedKeySpec(Base64.getDecoder().decode(privateKey)));
+  } catch (NoSuchAlgorithmException e) {
+    throw new RuntimeException("当前Java环境不支持RSA", e);
+  } catch (InvalidKeySpecException e) {
+    throw new RuntimeException("无效的密钥格式");
+  }
+}
 }
