@@ -1,4 +1,4 @@
-package org.yjr.wechat;
+package yjr.wechat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import com.wechat.pay.contrib.apache.httpclient.WechatPayHttpClientBuilder;

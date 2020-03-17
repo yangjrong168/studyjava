@@ -1,4 +1,4 @@
-package org.yjr.designpatterns.structural.adapter.logexample;
+package yjr.designpatterns.structural.adapter.logexample;
 
 
 public class LogTest {

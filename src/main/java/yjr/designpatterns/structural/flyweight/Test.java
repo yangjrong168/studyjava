@@ -1,6 +1,6 @@
-package org.yjr.designpatterns.structural.flyweight;
+package yjr.designpatterns.structural.flyweight;
 /**
- * 享元模式的应用
+ * 锟斤拷元模式锟斤拷应锟斤拷
  * @author yangjingrong
  *
  */

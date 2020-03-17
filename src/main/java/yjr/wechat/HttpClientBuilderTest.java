@@ -1,4 +1,4 @@
-package org.yjr.wechat;
+package yjr.wechat;
 import com.wechat.pay.contrib.apache.httpclient.WechatPayHttpClientBuilder;
 import com.wechat.pay.contrib.apache.httpclient.util.PemUtil;
 

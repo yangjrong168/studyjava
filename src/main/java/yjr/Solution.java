@@ -1,4 +1,4 @@
-package org.yjr;
+package yjr;
 
 public class Solution {
 	//输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)

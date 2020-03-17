@@ -1,4 +1,4 @@
-package org.yjr.wechat;
+package yjr.wechat;
 
 
 import java.io.IOException;
