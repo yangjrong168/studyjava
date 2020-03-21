@@ -2,6 +2,9 @@ package yjr.wechat;
 
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,11 +37,20 @@ public class WechatController {
 	        url = "http://yjr2.natapp1.cc/wechat/getUser";
 	        //url = wxConfig.getRedirectUrl();
 	        String str=wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, null);
-	        return str;
+	        Map<String,Object> map = new HashMap<String,Object>();
+	        map.put("code", 0);
+	        map.put("success", true);
+	        Map<String,Object> data = new HashMap<String,Object>();
+
+	        data.put("url", str);
+	        map.put("data", data);
+	        return map;
 	    }
 	    //@ApiOperation(value="获取用户openId", notes="获取openId 然后重定向到客户端，地址为 redirect",httpMethod = "GET")
 	    @RequestMapping(value = "/getUser")
 	    public void getUser(String code,String state,HttpServletRequest request, HttpServletResponse response){
+	    	System.out.println("state=="+state);
+	    	state="http://mzyjune.natapp1.cc";
 	        try {
 	            WxMpOAuth2AccessToken wxMpOAuth2AccessToken = wxMpService.oauth2getAccessToken(code);
 	            WxMpUser wxMpUser = wxMpService.oauth2getUserInfo(wxMpOAuth2AccessToken, null);
