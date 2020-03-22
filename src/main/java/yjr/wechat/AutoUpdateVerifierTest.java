@@ -75,7 +75,6 @@ public class AutoUpdateVerifierTest {
     verifier = new AutoUpdateCertificatesVerifier(
         new WechatPay2Credentials(mchId, new PrivateKeySigner(mchSerialNo, merchantPrivateKey)),
         apiV3Key.getBytes("utf-8"));
-
     httpClient = WechatPayHttpClientBuilder.create()
         .withMerchant(mchId, mchSerialNo, merchantPrivateKey)
         .withValidator(new WechatPay2Validator(verifier))

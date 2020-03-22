@@ -26,7 +26,7 @@ spring:
 
 # 公众号配置(必填)
 wx:
-  redirectUrl: http://yjr2.natapp1.cc/wechat/getUser
+  redirectUrl: http://yjr5.natapp1.cc/wechat/getUser
   mp:
     configs:
       - appId: wx82184b127eb9b148
@@ -40,7 +40,7 @@ wx:
     #token: yjrcar
     #aesKey: aesKey
   pay:
-    appId: wx3a812d61048f12ba
+    appId: wx82184b127eb9b148
     mchId: 1553237271
     mchKey: #微信支付商户密钥
     subAppId: #服务商模式下的子商户公众账号ID

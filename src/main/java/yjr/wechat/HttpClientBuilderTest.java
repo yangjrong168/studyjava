@@ -90,10 +90,14 @@ public class HttpClientBuilderTest {
   public void setup() throws IOException  {
    // PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(
     //    new ByteArrayInputStream(privateKey.getBytes("utf-8")));
-    PrivateKey merchantPrivateKey =  this.getPrivateKey("D:\\java\\study\\studyjava\\src\\main\\resources\\apiclient_key.pem");
+	//    PrivateKey merchantPrivateKey =  this.getPrivateKey("D:\\java\\study\\studyjava\\src\\main\\resources\\apiclient_key.pem");
+
+    PrivateKey merchantPrivateKey =  this.getPrivateKey("D:\\java\\workspace\\studyjava\\src\\main\\resources\\apiclient_key.pem");
    // X509Certificate wechatpayCertificate = PemUtil.loadCertificate(
       //  new ByteArrayInputStream(certificate.getBytes("utf-8")));
-    X509Certificate wechatpayCertificate = this.getCertificate("D:\\java\\study\\studyjava\\src\\main\\resources\\wechatpay_1C12553F72E2B121FD6DEBF22DD60B99FB096FED.pem");
+    X509Certificate wechatpayCertificate = this.getCertificate("D:\\java\\workspace\\studyjava\\src\\main\\resources\\wechatpay_1C12553F72E2B121FD6DEBF22DD60B99FB096FED.pem");
+
+   // X509Certificate wechatpayCertificate = this.getCertificate("D:\\java\\study\\studyjava\\src\\main\\resources\\wechatpay_1C12553F72E2B121FD6DEBF22DD60B99FB096FED.pem");
     ArrayList<X509Certificate> listCertificates = new ArrayList<>();
     listCertificates.add(wechatpayCertificate);
 

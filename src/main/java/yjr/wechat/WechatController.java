@@ -15,10 +15,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
+import me.chanjar.weixin.common.bean.WxJsapiSignature;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.result.WxMpOAuth2AccessToken;
 import me.chanjar.weixin.mp.bean.result.WxMpUser;
+import me.chanjar.weixin.mp.enums.TicketType;
+import yjr.wechat.mp.utils.ResData;
 @RestController
 @RequestMapping("wechat")
 @Slf4j
@@ -26,27 +29,17 @@ public class WechatController {
 	  
 	    @Autowired
 	    private WxMpService wxMpService;
-	    
-	   // @Autowired
-	   // private WxConfig wxConfig;
 	    @RequestMapping(value = "/getUrl")
 	    @ResponseBody
-	    public Object getUrl(){
-	    	//wxMpService = 
+	    public ResData getUrl(){
 	        String url = "";
-	        url = "http://yjr2.natapp1.cc/wechat/getUser";
+	        url = "http://yjr5.natapp1.cc/wechat/getUser";
 	        //url = wxConfig.getRedirectUrl();
 	        String str=wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, null);
 	        Map<String,Object> map = new HashMap<String,Object>();
-	        map.put("code", 0);
-	        map.put("success", true);
-	        Map<String,Object> data = new HashMap<String,Object>();
-
-	        data.put("url", str);
-	        map.put("data", data);
-	        return map;
+	        map.put("url", str);
+	        return ResData.success(map);
 	    }
-	    //@ApiOperation(value="获取用户openId", notes="获取openId 然后重定向到客户端，地址为 redirect",httpMethod = "GET")
 	    @RequestMapping(value = "/getUser")
 	    public void getUser(String code,String state,HttpServletRequest request, HttpServletResponse response){
 	    	System.out.println("state=="+state);
@@ -71,6 +64,20 @@ public class WechatController {
 	        } catch (WxErrorException e) {
 	            e.printStackTrace();
 	        }
+	    }
+	    @RequestMapping(value = "/createJsapiSignature")
+	    public ResData createJsapiSignature() {
+	    	try {
+				//String token = wxMpService.getAccessToken();
+				
+				WxJsapiSignature sign = wxMpService.createJsapiSignature("http://mzyjune.natapp1.cc/comPageMain/first");
+				return ResData.success(sign);
+			} catch (WxErrorException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    	return ResData.error();
+
 	    }
 	    //@ApiIgnore
 	    @RequestMapping(value = "/config")
