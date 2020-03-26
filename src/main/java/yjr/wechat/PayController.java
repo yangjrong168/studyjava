@@ -159,7 +159,7 @@ public class PayController {
 	     return sb.toString();
 	 }
 	
-	@RequestMapping(value = "/wechatRecall")
+	@RequestMapping(value = "/recall")
 	public ResData wechatRecall(@RequestBody JSONObject jsonParam) throws URISyntaxException, ClientProtocolException, IOException {
 		
 		System.out.println(jsonParam.toString());
