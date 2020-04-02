@@ -1,0 +1,220 @@
+[2020-03-19 09:07:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:07:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:08:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:08:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:09:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:09:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:10:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:10:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:11:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:11:48] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:12:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:12:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:13:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:13:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:14:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:14:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:15:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:15:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:16:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:16:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:17:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:17:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:18:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:18:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:19:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:19:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:20:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:20:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:21:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:21:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:22:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:22:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:23:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:23:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:24:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:24:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:25:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:25:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:26:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:26:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:27:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:27:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:28:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:28:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:29:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:29:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:30:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:30:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:31:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:31:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:32:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:32:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:33:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:33:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:34:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:34:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:35:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:35:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:36:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:36:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:37:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:37:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:38:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:38:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:39:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:39:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:40:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:40:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:41:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:41:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:42:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:42:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:43:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:43:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:44:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:44:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:45:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:45:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:46:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:46:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:47:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:47:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:48:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:48:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:49:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:49:47] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:50:00] -- [DEBUG]: [yjr.App] -- Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+[2020-03-19 09:51:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:51:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:52:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:52:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:53:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:53:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:54:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:54:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:55:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:55:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:56:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:56:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:57:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:57:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:58:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:58:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 09:59:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 09:59:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:00:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:00:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:01:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:01:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:02:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:02:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:03:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:03:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:04:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:04:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:05:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:05:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:06:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:06:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:07:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:07:02] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:07:50] -- [DEBUG]: [yjr.App] -- Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+[2020-03-19 10:08:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:08:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:09:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:09:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:10:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:10:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:11:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:11:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:12:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:12:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:13:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:13:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:14:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:14:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:15:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:15:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:16:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:16:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:17:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:17:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:18:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:18:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:19:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:19:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:20:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:20:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:21:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:21:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:22:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:22:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:23:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:23:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:24:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:24:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:25:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:25:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:26:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:26:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:27:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:27:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:28:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:28:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:29:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:29:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:30:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:30:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:31:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:31:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:32:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:32:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:33:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:33:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:34:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:34:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:35:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:35:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:36:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:36:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:37:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:37:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:38:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:38:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:39:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:39:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:40:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:40:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:41:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:41:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:42:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:42:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:43:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:43:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:44:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:44:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:45:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:45:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:46:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:46:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:47:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:47:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:48:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:48:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:49:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:49:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:50:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:50:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:51:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:51:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:52:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:52:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:53:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:53:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:54:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:54:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:55:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:55:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS
+[2020-03-19 10:56:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing expired connections
+[2020-03-19 10:56:51] -- [DEBUG]: [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] -- Closing connections idle longer than 60000 MILLISECONDS

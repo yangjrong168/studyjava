@@ -1,0 +1,19 @@
+[2020-03-16 13:56:12] -- [INFO ]: [org.yjr.App] -- Starting App on GT-IT154 with PID 10688 (D:\java\study\studyjava\target\classes started by yangjingrong in D:\java\study\studyjava)
+[2020-03-16 13:56:12] -- [INFO ]: [org.yjr.App] -- No active profile set, falling back to default profiles: default
+[2020-03-16 13:56:17] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-3333"]
+[2020-03-16 13:56:17] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2020-03-16 13:56:17] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.27]
+[2020-03-16 13:56:17] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2020-03-16 13:56:19] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-3333"]
+[2020-03-16 13:56:19] -- [INFO ]: [org.yjr.App] -- Started App in 9.08 seconds (JVM running for 10.47)
+[2020-03-16 14:00:24] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-03-16 14:00:44] -- [INFO ]: [org.yjr.spring.controller.TestController] -- wwww...............
+[2020-03-16 14:10:15] -- [INFO ]: [org.yjr.App] -- Starting App on GT-IT154 with PID 8312 (D:\java\study\studyjava\target\classes started by yangjingrong in D:\java\study\studyjava)
+[2020-03-16 14:10:15] -- [INFO ]: [org.yjr.App] -- No active profile set, falling back to default profiles: default
+[2020-03-16 14:10:16] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-3333"]
+[2020-03-16 14:10:16] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2020-03-16 14:10:16] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.27]
+[2020-03-16 14:10:16] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2020-03-16 14:10:17] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-3333"]
+[2020-03-16 14:10:17] -- [INFO ]: [org.yjr.App] -- Started App in 2.155 seconds (JVM running for 2.476)
+[2020-03-16 14:10:37] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'

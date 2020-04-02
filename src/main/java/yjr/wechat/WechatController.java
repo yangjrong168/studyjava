@@ -69,8 +69,10 @@ public class WechatController {
 	    public ResData createJsapiSignature() {
 	    	try {
 				//String token = wxMpService.getAccessToken();
-				
+				System.out.println("createJsapiSignature=================");
 				WxJsapiSignature sign = wxMpService.createJsapiSignature("http://mzyjune.natapp1.cc/comPageMain/first");
+				System.out.println("createJsapiSignature  end");
+				System.out.println(sign.toString());
 				return ResData.success(sign);
 			} catch (WxErrorException e) {
 				// TODO Auto-generated catch block

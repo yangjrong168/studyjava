@@ -1,0 +1,12 @@
+[2020-03-13 10:13:14] -- [INFO ]: [org.yjr.App] -- Starting App on GT-IT154 with PID 11456 (D:\java\study\studyjava\target\classes started by yangjingrong in D:\java\study\studyjava)
+[2020-03-13 10:13:14] -- [INFO ]: [org.yjr.App] -- No active profile set, falling back to default profiles: default
+[2020-03-13 10:13:15] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Initializing ProtocolHandler ["http-nio-3333"]
+[2020-03-13 10:13:15] -- [INFO ]: [org.apache.catalina.core.StandardService] -- Starting service [Tomcat]
+[2020-03-13 10:13:15] -- [INFO ]: [org.apache.catalina.core.StandardEngine] -- Starting Servlet engine: [Apache Tomcat/9.0.27]
+[2020-03-13 10:13:16] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring embedded WebApplicationContext
+[2020-03-13 10:13:16] -- [INFO ]: [org.apache.coyote.http11.Http11NioProtocol] -- Starting ProtocolHandler ["http-nio-3333"]
+[2020-03-13 10:13:16] -- [INFO ]: [org.yjr.App] -- Started App in 2.747 seconds (JVM running for 4.915)
+[2020-03-13 10:17:53] -- [INFO ]: [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-03-13 10:17:54] -- [INFO ]: [org.yjr.spring.controller.TestController] -- wwww...............
+[2020-03-13 10:19:54] -- [INFO ]: [org.yjr.spring.controller.TestController] -- wwww...............
+[2020-03-13 10:19:55] -- [INFO ]: [org.yjr.spring.controller.TestController] -- wwww...............

@@ -3,7 +3,11 @@ package yjr.wechat;
 public class WechatParam {
 	public static String mchId = "1579088781"; // 商户号
 	public static String mchSerialNo = "754A7808528619074D854F58F9D4BBC242C99D2E"; // 商户证书序列号
-	  
+	public static final String  appId ="wx82184b127eb9b148";
+	public static final String serviceId = "00004000000000158372858330471545";
+	public static final String apiKey = "qwertyuiopasdfghjklzxcv123456789";
+	
+	public static final String apiKeyV3 = "asdfqwerzxcv1234569876543dasdfds";
 
 	public static String reqdata = "{\n"
 	      + "    \"stock_id\": \"9433645\",\n"

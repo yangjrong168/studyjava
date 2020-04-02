@@ -1,0 +1,34 @@
+private static String certificate =  "-----BEGIN CERTIFICATE-----\n"+"MIID7DCCAtSgAwIBAgIUdUp4CFKGGQdNhU9Y+dS7wkLJnS4wDQYJKoZIhvcNAQEL\r\n" + 
+	  		"BQAwXjELMAkGA1UEBhMCQ04xEzARBgNVBAoTClRlbnBheS5jb20xHTAbBgNVBAsT\r\n" + 
+	  		"FFRlbnBheS5jb20gQ0EgQ2VudGVyMRswGQYDVQQDExJUZW5wYXkuY29tIFJvb3Qg\r\n" + 
+	  		"Q0EwHhcNMjAwMzA5MDMxNzExWhcNMjUwMzA4MDMxNzExWjB+MRMwEQYDVQQDDAox\r\n" + 
+	  		"NTc5MDg4NzgxMRswGQYDVQQKDBLlvq7kv6HllYbmiLfns7vnu58xKjAoBgNVBAsM\r\n" + 
+	  		"Iea3seWcs+W4guWGsOm4n+enkeaKgOaciemZkOWFrOWPuDELMAkGA1UEBgwCQ04x\r\n" + 
+	  		"ETAPBgNVBAcMCFNoZW5aaGVuMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\r\n" + 
+	  		"AQEAqUuzGISqBMRzgBzTYnpQsUS1gQkEtGzL0Ky1DnjVpXOzoL11GNEx3Z4S+04V\r\n" + 
+	  		"NciiiW7gUD3JZ9bx0GXGnhxz1+ILgFXg2jYLmf8oJEH1uPPRmlZ7joAKK7leB9bs\r\n" + 
+	  		"sPi70ffq/iiP9IGEbPmpUfFVHqorDDMbWQZWlMGzF58Vr3X2b3Aw3Z7s3ZObWrw1\r\n" + 
+	  		"bSH+ICz/I1z97cxCA/CBsdliowWGb8ZdWhTtdj+pJBInogkhaoQjpjFqg4lqQvaR\r\n" + 
+	  		"qICK0eSLnFWllGtaljrd9LDKFqZ4iR+dVk3ut0V/wJfTaoe7z/tDaM+ne3ek2n6H\r\n" + 
+	  		"k9d4JHFHc+noz6Qzu03Rx1qI4wIDAQABo4GBMH8wCQYDVR0TBAIwADALBgNVHQ8E\r\n" + 
+	  		"BAMCBPAwZQYDVR0fBF4wXDBaoFigVoZUaHR0cDovL2V2Y2EuaXRydXMuY29tLmNu\r\n" + 
+	  		"L3B1YmxpYy9pdHJ1c2NybD9DQT0xQkQ0MjIwRTUwREJDMDRCMDZBRDM5NzU0OTg0\r\n" + 
+	  		"NkMwMUMzRThFQkQyMA0GCSqGSIb3DQEBCwUAA4IBAQCLex4PWSzYGFHVskrMcJO8\r\n" + 
+	  		"k9BTr1DRD0VdCAnlVCFXybvboB/M04MWC1nD8ywdZb0BxDolXHRyxbmEvRd7aIrU\r\n" + 
+	  		"SzANOcHsMgLVQpd9cnvgYjzGu9Xlle22vz3Cj09u/sAHRhR1XvT1gzFaKn3tphS6\r\n" + 
+	  		"d5rZezVD9oFcpQIRCwOfT4isFVyXZ8PmZ4Nm3HtAcU+a7WUKKcZos+TqIT4tPHxX\r\n" + 
+	  		"LgAwsfo4RBnhNDQqxfY9n2k9hxsU25a2BDXl6k8GdA8HgIs+dl1p+/KiaAldzHnP\r\n" + 
+	  		"dTrtWx2Ft4NRVpqFRgRiAqhCyetjZ45ETEjn/2N3YnrQkNWUyo9AaWxeR5CNv0wR"
+	      + "-----END CERTIFICATE-----";
+	      
+	      
+	  11:29:41.344 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "{"data":[
+	  {"serial_no":"1C12553F72E2B121FD6DEBF22DD60B99FB096FED","effective_time":"2020-03-09T11:17:10+08:00","expire_time":"2025-03-08T11:17:10+08:00",
+	  "encrypt_certificate":{"algorithm":"AEAD_AES_256_GCM","nonce":"d3693955ee11","associated_data":"certificate","ciphertext":"
+	  WCk8X/2+UaK97NB9G2Kwr4P8jWiKH4CRwJc1IXEGfY5e8aEKXqULB001QzMT+HiZPNGfCbzwYFAKUe+lE2/NAU9cTrdIMjOF1wQfOk43beUhcYUw6s+GxwmkbYPjAB3FXZeZYUuhUpZELo5XUzPNv1J9CeKVnNNkV3hatuAPq9dE8JBdN8P0ZEY0DSrJzt0kUoUQX9RuboJFypPqo1yAzJ8BTbVEYD9sDM80ahVdblN4s2XQVq1je2Ppecj/Q8KU7n6DwvVboJv95wN/6QDWvH/ytBrDig1eFC+njdL+Ym+OI6WdfVHUmmHHDEnoqEVPAuwbCNgC2VRCrkL6pzBSP2U1kHrNZ4V5UTzk//LRyV6YzM7bfTi2hg0krAc2Uj/d/HKScPtzywJvsXCuwfQ3CNLnF5lzvMG2GnRS8Q+vVHk3he/KPcsUPE2TydFDnPPqBurpcotrx2zNWrKnvz8raFe/p3UiijsVnnrGxGucd3d8IlyHYy19btItrD6S3OKzYQPzmYFjnKHc4Venv7IMvn5BbhHNoXXherxiDKab/5+yQeSC83gh5ktPaaOQi444/anvLSuNZ3j5J1Evljs0eKqamK9KP+8Du4bDrWfqyNc2v5cWR9gQ6plKplk+vSdl3YkTjauFLTYnkfLFlL0eql6XPmDhVIHQnEWK6eEDIc5hezIkQWExHxKQ6fCkM1oMUm4FBJqa5/xMXbQVbvmA9JMEiYInz+yMl6M8jIWOaClrR24tAJBl0DmZ3GPt4mud3F1I7g8L/xxzHANxOgVbLkj0LVFL9gD+WzT90IuBwdqKtr0QgceecY2VyETCyHbvSiZ5uOUzzs0RIE7OQsbXIWG8CkzhAcJdLx+B8JdknsaiSLRci3FdnugWDUK5bthXf/WLHBMwsPkH47r3OoLuJSDNUv6und7J40MlO/b07AeK02VISmebdhDoG/J/t/vD7TfdCK/jSuBdC9ir/56ahpwnnhXT4aHD+41FMbe99lS5HPy5i+idxKH+e2bSQzBAJ0kzM+H5G1YjITsO6YWTUeNkZJeJv87IIpi43fQ3H9i/T7VSjB857esB6T2cHpY7FfsBH8inf0lJxeQgiaAnXUudTuiQe907qhdjFFlu8ewHXFCHKtbtARD/Io2NZRhsY5CIroyhzS6Dx1E0zjK0QWQmpNJzkp0L1J+YJAY2+pMZT7kKVYlgoZM++exlCXcktWVTdrkY/EyIJKI8+BTTJjpNDk5YCqAnftihvVOdjVeDWDDv0c90mWJi2PFXxcNlqb0tpRjYp1+KpZgCcfRstoEGm9zZ7zFQU4ewvInJI3HWALGuJul8yqFQeaIMqtEZ+FKhApXOvOvgBczYDodz+uDwnVbKP7nPMRpYFmBmJ0fxyPSwhUU0BSqsLP6Huvd9OWSCY0hg3YXfHb4GJbKihqC+JbFWMu72FR6fwof5nwQi9h4Q6YNQJce88aekH+bjPeMvxGRFTUUnmW5KngQ7mpb+54ZIAkSMxVtu9NWA9ALVYQUgCJDeix8OkBffaUIhFqwH7xlAjVXPHNUTzG/RZyAC5WaSuO4Qr/iEv+tMqWUypJ8qbl0SPTF2ds7paWJsf97ox2IZHjeiGDrWZOnmn9vobSjae1TkkGrCjsEnpfnZ+jheMwI03oRGwpv2w0otd18XvKBoFjKjznbH6kD1+jkWvdQoQejuOPzfuCPR4SpSIQUfjhnL9wby1pRBSUjY1YLThVnICuU9viU9wBPcYQ7vc70K6twr78IefNcGjWxoYg26rFwqV2vB/iN7xZrYhlDuQyg9I442QKBz4T/lEFXub2X1nKv4yEPgtVeo9D0rpEB9mzRLbb6ozwLgmcoPOXuo1f3Ykug8L+kdLbMWh+E3fDuAKg==
+	  
+	  "}}]}"
+	  
+	      
+	      
+	      
