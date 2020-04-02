@@ -1,4 +1,10 @@
-
+app:
+   id: SampleApp
+apollo:
+       meta: http://localhost:8080
+       bootstrap:
+                 enabled: true
+       
 server:
       port: 3333
 #logging.level.ROOT=INFO

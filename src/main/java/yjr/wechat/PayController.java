@@ -43,8 +43,8 @@ import com.wechat.pay.contrib.apache.httpclient.util.AesUtil;
 
 import yjr.wechat.mp.utils.ResData;
 import yjr.wechat.mp.utils.WechatUtils;
-@RestController
-@RequestMapping("pay")
+//@RestController
+//@RequestMapping("pay")
 public class PayController {
 	  
 	  private static String mchId = "1579088781"; // 商户号
